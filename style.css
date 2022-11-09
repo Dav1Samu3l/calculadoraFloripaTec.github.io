@@ -4,11 +4,9 @@ body {
     background-color: #FAF9F6;
     font-family: Arial;
     font-size: 18px;
-
 }
 
 .flex-container {
-
     background-color: #ECE7DD;
     display: flex;
     flex-direction: row;
@@ -21,7 +19,7 @@ body {
 }
 
 .flex-items:nth-child(1) {
-    
+
     display: block;
     flex-grow: 0;
     flex-shrink: 1;
@@ -38,3 +36,5 @@ input {
     padding-left: 10px;
 
 }
+
+button {}

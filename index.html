@@ -17,18 +17,22 @@
         <div class="flex-items">
 
             <h1>Calculadora</h1>
-            <input type="number">
-            <input type="number">
+            <input id="input1" type="number">
+            <span></span>
+            <input id="input2" type="number">
 
-            <select name="select">
-                <option value="soma"> + soma</option>
-                <option value="subtracao">  - subtrção</option>
-                <option value="divisao"> ÷ divisão</option>
-                <option value="multiplicaçao"> x multiplicação</option>
-                <option value="aperacoes" selected>operaçoes</option>
+            <select id="select" name="select">
+                <option value="soma">+</option>
+                <option value="subtracao">-</option>
+                <option value="divisao">÷</option>
+                <option value="multiplicaçao">x</option>
+                <option onclick="operacao" value="aperacoes" selected>operaçoes</option>
             </select>
-            <button id="calcular">calcular</button>
-            <p>O resultado da operação é:</p>
+            <div>
+
+                <button  id="calcular">calcular</button>
+                <p class="resultado">O resultado da operação é:</p>
+            </div>
         </div>
     </div>
     <script src="./script.js"></script>
