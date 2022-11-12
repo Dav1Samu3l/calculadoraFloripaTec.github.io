@@ -4,14 +4,19 @@ function operacao() {
 
     let result = document.querySelector(".resultado")
     let select = document.querySelector('.select')
-   
+
     let index_select = select.options.selectedIndex
 
     if (select.options[index_select].innerHTML == '+') {
         result.innerText = parseInt(inputs[0].value) + parseInt(inputs[1].value)
-    } else {
-
+    } else if (select.options[index_select].innerHTML == '-') {
+        result.innerText = parseInt(inputs[0].value) - parseInt(inputs[1].value)
+    } else if (select.options[index_select].innerHTML == 'x') {
+        result.innerText = parseInt(inputs[0].value) * parseInt(inputs[1].value)
+    } else if (select.options[index_select].innerHTML == '÷') {
+        result.innerText = parseInt(inputs[0].value) / parseInt(inputs[1].value)
     }
+
 }
 
 function calcular() {
