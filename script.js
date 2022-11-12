@@ -1,6 +1,5 @@
 function operacao() {
     let inputs = document.querySelectorAll('.input')
-    console.log(inputs);
 
     let result = document.querySelector(".resultado")
     let select = document.querySelector('.select')
