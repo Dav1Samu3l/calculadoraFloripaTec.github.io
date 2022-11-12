@@ -19,7 +19,7 @@ function operacao() {
 }
 
 function calcular() {
-    var elemento = document.getElementById('calcular')
+    var button = document.getElementById('calcular')
 
     button.addEventListener('click', () => {
         operacao()
