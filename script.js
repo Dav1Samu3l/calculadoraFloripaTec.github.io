@@ -1,25 +1,21 @@
-
-
-
-
-
-
 function operacao() {
-    const inputs = document.querySelectorAll('.input')
-    const result = document.querySelector(".resultado")
-    const select = document.querySelector('.select')
-    const value_input = inputs
-    const index_select = select.options.selectedIndex
+    let inputs = document.querySelectorAll('.input')
+    console.log(inputs);
+
+    let result = document.querySelector(".resultado")
+    let select = document.querySelector('.select')
+   
+    let index_select = select.options.selectedIndex
 
     if (select.options[index_select].innerHTML == '+') {
-        result.innerText = parseInt(value_input[0]) + parseInt(value_input[1])
+        result.innerText = parseInt(inputs[0].value) + parseInt(inputs[1].value)
     } else {
 
     }
 }
 
 function calcular() {
-    var elemento = document.getElementById('calcular')
+    var button = document.getElementById('calcular')
 
     button.addEventListener('click', () => {
         operacao()
